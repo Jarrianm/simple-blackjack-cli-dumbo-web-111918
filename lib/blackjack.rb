@@ -11,7 +11,7 @@ puts "Your cards add up to #{card_total}."
 end
 
 def prompt_user
-puts "Type "h" to hit or "s" to stay"
+puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
@@ -31,9 +31,9 @@ end
 def hit?(next_card_total)
 prompt_user
 input = get_user_input
-if input == 's'
+if input == "s"
   next_card_total
-elsif input == 'h'
+elsif input == "h"
   deal_card + next_card_total
 else
   invalid_command
