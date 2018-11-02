@@ -53,6 +53,7 @@ welcome
 card_total = initial_round
 until card_total >21
   card_total = hit?(card_total)
+  display_card_total
 end
-puts end_game(card_total)
+ end_game(card_total)
 end
