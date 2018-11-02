@@ -1,5 +1,5 @@
 def welcome
-"Welcome to the Blackjack table."
+puts "Welcome to the Blackjack table."
 end
 
 def deal_card
