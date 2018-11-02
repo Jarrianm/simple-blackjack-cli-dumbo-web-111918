@@ -28,8 +28,16 @@ display_card_total(new)
 new
 end
 
-def hit?
-  # code hit? here
+def hit?(next_card_total)
+prompt_user
+input = get_user_input
+if input == "s"
+  next_card_total
+elsif input == "h"
+  deal_card + next_card_total
+else
+  invalid_command
+end
 end
 
 def invalid_command
@@ -41,5 +49,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+welcome
+card_total = initial_round
+until card_total >21
+  card_total = hit?(card_total)
+  display_card_total(card_total)
 end
+"Sorry, you hit #{card_total}. Thanks for playing."
