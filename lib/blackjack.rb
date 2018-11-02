@@ -56,3 +56,4 @@ until card_total >21
   display_card_total(card_total)
 end
 "Sorry, you hit #{card_total}. Thanks for playing."
+end
