@@ -1,13 +1,13 @@
 def welcome
-  # code #welcome here
+"Welcome to the table."
 end
 
 def deal_card
-  # code #deal_card here
+  rand(1..11)
 end
 
-def display_card_total
-  # code #display_card_total here
+def display_card_total (card_total)
+puts "Your cards "
 end
 
 def prompt_user
@@ -41,4 +41,3 @@ end
 def runner
   # code runner here
 end
-    
