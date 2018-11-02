@@ -31,9 +31,9 @@ end
 def hit?(next_card_total)
 prompt_user
 input = get_user_input
-if input == "s"
+if input == 's'
   next_card_total
-elsif input == "h"
+elsif input == 'h'
   deal_card + next_card_total
 else
   invalid_command
